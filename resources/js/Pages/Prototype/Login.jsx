@@ -48,10 +48,12 @@ export default function login() {
                                 </div>
                             </div>
                             <div className="grid space-y-[14px] mt-[30px]">
+                                <Link href={route('prototype.dashboard')}>
+                                    <PrimaryButton type="button" variant="primary" className="bg-alerange">
+                                        <span className="text-base font-semibold ">Start Watching</span>
+                                    </PrimaryButton>
+                                </Link>
 
-                                <PrimaryButton type="button" variant="primary" className="bg-alerange">
-                                    <span className="text-base font-semibold ">Start Watching</span>
-                                </PrimaryButton>
                                 <Link href={route('prototype.register')}>
                                     <PrimaryButton type="button" variant="light-outline" className="border border-white">
                                         <span className="text-base text-white">Create New Account</span>
