@@ -48,6 +48,10 @@ Route::prefix('prototype')->name('prototype.')->group(function () {
     route::get('/pricing', function () {
         return Inertia::render('Prototype/Pricing');
     })->name('pricing');
+
+    route::get('/video/{slug}', function () {
+        return Inertia::render('Prototype/Video/Show');
+    })->name('video.show');
 });
 
 
